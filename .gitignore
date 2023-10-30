@@ -1,0 +1,19 @@
+*.zip
+deployment/
+app/
+
+# Ignore Terraform plan files
+*.tfplan
+*.tfstate
+*.tfstate.backup
+
+# Ignore Terraform workspace files
+.terraform/
+
+# Ignore Terraform variable override files
+*.tfvars
+*.auto.tfvars
+
+# Ignore Terraform configuration files
+.terraformrc
+terraform.rc
