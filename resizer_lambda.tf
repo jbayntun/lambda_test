@@ -20,7 +20,7 @@ resource "aws_lambda_function" "image_resizer" {
   handler       = "resizer.lambda_handler"
   runtime       = "python3.8"
   
-  filename      = "../resizer.zip"
+  filename      = "resizer.zip"
   timeout = 10
   
   role          = aws_iam_role.lambda_role.arn
