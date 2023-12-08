@@ -1,0 +1,15 @@
+name: "snyk test"
+on:
+  pull_request: {}
+  push: {}
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: snyk/actions/setup@master
+      - name: Snyk Test
+        run: snyk test 
+        env:
+           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
