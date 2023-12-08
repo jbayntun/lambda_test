@@ -3,6 +3,7 @@ import boto3
 import json
 from PIL import Image
 from io import BytesIO
+#comment
 
 def lambda_handler(event, context):
     s3_client = boto3.client('s3')
